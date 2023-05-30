@@ -6,17 +6,17 @@
         <h1 class="text-center">Modificar clientes</h1>
         <div class="row justify-content-center">
             <form action="/crud_clientes.php/controladores/clientes/guardar.php" method="POST" class="col-lg-8 border bg-light p-3">
-                <input type="hidden" name="cliente  _id">
+                <input type="hidden" name="cliente_id">
                 <div class="row mb-3">
                     <div class="col">
-                        <label for="producto_nombre">Nombre del producto</label>
-                        <input type="text" name="producto_nombre" id="producto_nombre" class="form-control">
+                        <label for="producto_nombre">Nombre del cliente</label>
+                        <input type="text" name="cliente_nombre" id="cliente_nombre" class="form-control">
                     </div>
                 </div>
                 <div class="row mb-3">
                     <div class="col">
-                        <label for="producto_precio">Precio del producto</label>
-                        <input type="number" step="0.01" min="0" name="producto_precio" id="producto_precio" class="form-control">
+                        <label for="cliente_nit">Nit del cliente</label>
+                        <input type="text" name="cliente_nit" id="cliente_nit" class="form-control">
                     </div>
                 </div>
                 <div class="row mb-3">
