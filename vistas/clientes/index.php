@@ -1,17 +1,3 @@
-<?php
-require '../../modelos/cliente.php';
-    try {
-        $cliente = new Cliente();
-
-        $clientes = $cliente->buscar();
-            // var_dump($clientes);
-            // exit;
-    } catch (PDOException $e) {
-        $error = $e->getMessage();
-    } catch (Exception $e2){
-        $error = $e2->getMessage();
-    }
-?>
 <?php include_once '../../includes/header.php'?>
 <?php include_once '../../includes/navbar.php'?>
     <div class="container">
