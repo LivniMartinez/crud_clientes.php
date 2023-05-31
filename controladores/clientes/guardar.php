@@ -1,5 +1,5 @@
 <?php
-require '../../modelos/clientes.php';
+require '../../modelos/Clientes.php';
 
 
 if($_POST['cliente_nombre'] != '' && $_POST['cliente_nit'] != ''){
