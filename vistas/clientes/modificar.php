@@ -1,5 +1,15 @@
 <?php
-    var_dump($_GET);
+require '../../modelos/cliente.php';
+    try {
+        $cliente = new Cliente($_GET);
+
+        $clientes = $cliente->buscar();
+       
+    } catch (PDOException $e) {
+        $error = $e->getMessage();
+    } catch (Exception $e2){
+        $error = $e2->getMessage();
+    }
 ?>
 <?php include_once '../../includes/header.php'?>
     <div class="container">
@@ -9,7 +19,7 @@
                 <input type="hidden" name="cliente_id">
                 <div class="row mb-3">
                     <div class="col">
-                        <label for="producto_nombre">Nombre del cliente</label>
+                        <label for="cliente_nombre">Nombre del cliente</label>
                         <input type="text" name="cliente_nombre" id="cliente_nombre" class="form-control">
                     </div>
                 </div>
