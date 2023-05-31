@@ -13,7 +13,7 @@
                 <div class="row mb-3">
                     <div class="col">
                         <label for="cliente_nit">Nit del cliente</label>
-                        <input type="text" name="cliente_nit" id="cliente_nit" class="form-control" required>
+                        <input type="text" name="cliente_nit" id="cliente_nit" class="form-control">
                     </div>
                 </div>
                 <div class="row mb-3">
