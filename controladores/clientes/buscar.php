@@ -1,7 +1,7 @@
 <?php
 require '../../modelos/Cliente.php';
 try {
-    $producto = new Cliente($_GET);
+    $cliente = new Cliente($_GET);
     
     $clientes = $cliente->buscar();
     // echo "<pre>";
